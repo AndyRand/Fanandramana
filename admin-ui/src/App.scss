@@ -1,0 +1,63 @@
+.App {
+    .MuiAppBar-colorSecondary {
+      background-color: #108ee9;
+  
+      .RaAppBar-menuButton-13 {
+        background-color: #2db7f5;
+      }
+    }
+  
+    .MuiDrawer-paper {
+      background-color: #fcfcfc;
+  
+      .MuiListItemIcon-root {
+        color: #455560;
+      }
+    }
+  
+    .MuiButton-textPrimary {
+      background-color: #108ee9;
+      margin: 0 0.5rem;
+      color: #fcfcfc;
+      padding: 0.5rem 1rem;
+  
+      &:hover {
+        background-color: #2db7f5;
+      }
+    }
+  
+    .MuiTableRow-head {
+      .MuiTableCell-head {
+        background-color: #108ee9;
+        color: #fcfcfc;
+      }
+  
+      .MuiTableSortLabel-root {
+        &:hover {
+          color: #fcfcfc;
+  
+          .MuiTableSortLabel-icon {
+            color: #fcfcfc !important;
+          }
+        }
+        .MuiTableSortLabel-icon {
+          color: fcfcfc !important;
+        }
+      }
+      .MuiTableSortLabel-active {
+          font-weight: 600;
+          color: #fcfcfc;
+  
+        .MuiTableSortLabel-icon {
+          color: #2db7f5 !important;
+        }
+      }
+    }
+  
+    .MuiFormLabel-root {
+      color:#455560;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+  
