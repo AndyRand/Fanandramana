@@ -1,0 +1,118 @@
+:root {
+  --surface: #2db7f5;
+  --white: #fcfcfc; 
+  --primary: #2db7f5;
+  --secondary: #108ee9;
+  --text: #455560;
+}
+
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--surface);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  &__box {
+    text-align: center;
+    width: 340px;
+    background-color: var(--white);
+    border-radius: 4px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--black2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+
+    h2 {
+      font-size: 18px;
+    }
+    img {
+      width: 48px;
+    }
+
+    &__message {
+      color: #455560;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    button,
+    .MuiButton-contained {
+      box-sizing: border-box;
+      background-color: var(--primary);
+      width: 300px;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      margin-top: auto;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: var(--secondary);
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+    label {
+      span {
+        display: block;
+        text-align: left;
+        font-size: 12px;
+        color: var(--black60);
+      }
+    }
+
+    input {
+      box-sizing: border-box;
+      background-color: var(--white);
+      border: none;
+      border-bottom: 1px solid #2db7f5;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      margin-top:1rem;
+      outline: none;
+      border-radius: 4px;
+      width: 300px;
+      color: #333333;
+      &:hover,
+      &:active,
+      &:focus,
+      &:not(:placeholder-shown) {
+        ~ .c-form__groupLabel {
+          font-size: 10px;
+          top: -4px;
+          transform: translateY(0);
+          color: #455560;
+        }
+    
+        ~ .c-form__border,
+        ~ .c-form__next {
+          transition: 0.3s;
+        }
+      }
+    
+      &:focus {
+        cursor: initial;
+      }
+    }
+  }
+}
